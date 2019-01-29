@@ -115,5 +115,5 @@ stroller.push({
   stock: 10
 });
 console.log(stroller);
-console.log(stroller[stroller.length - 1].merk + ' is new Merk');
+console.log(stroller[stroller.length - 1].merk + ' is a new Merk');
 //End Output Array
