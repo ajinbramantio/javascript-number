@@ -70,24 +70,33 @@ var arrayString = [
   'eight',
   'nine'
 ];
+
+var date = new Date();
+
 var stroller = [
   {
     merk: 'Pliko',
     price: 650000,
     color: 'Red',
-    stock: 6
+    stock: 6,
+    boolean: true,
+    dated: `${date.getDate()} - ${date.getMonth() + 1} - ${date.getFullYear()}`
   },
   {
     merk: 'Does',
     price: 825000,
-    color: 'brown',
-    stock: 3
+    color: 'Brown',
+    stock: null,
+    boolean: false,
+    dated: `${date.getDate()} - ${date.getMonth() + 1} - ${date.getFullYear()}`
   },
   {
     merk: 'Elle',
     price: 1250000,
     color: 'Blue',
-    stock: 12
+    stock: 12,
+    boolean: true,
+    dated: `${date.getDate()} - ${date.getMonth() + 1} - ${date.getFullYear()}`
   }
 ];
 
@@ -111,8 +120,10 @@ console.log(
 stroller.push({
   merk: 'Bugaboo',
   price: 1500000,
-  color: 'green',
-  stock: 10
+  color: 'Green',
+  stock: 10,
+  boolean: true,
+  dated: `${date.getDate()} - ${date.getMonth() + 1} - ${date.getFullYear()}`
 });
 console.log(stroller);
 console.log(stroller[stroller.length - 1].merk + ' is a new Merk');
